@@ -87,7 +87,6 @@ networkx==3.2.1
 notebook==7.2.1
 notebook_shim==0.2.4
 numpy==1.23.5
-packaging==24.1
 pandas==2.0.3
 pandocfilters==1.5.1
 parso==0.8.4
