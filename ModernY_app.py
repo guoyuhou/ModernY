@@ -13,12 +13,13 @@ def page():
             'Strom Genie': 'ModernY_tools\Storm_genie.py',
             'Markdown': 'ModernY_tools\Markdown.py',
             'Smalltools': 'ModernY_tools\smalltools.py'
-        }
+        },
+        'PyGWalker' : 'PyGWalker.py'
     }
     page_name = st.sidebar.radio('Navigation', list(pages.keys()))
     page_file = None
 
-    if page_name == 'ModernY':
+    if page_name == 'ModernY' or 'PyGWalker':
         page_file = pages[page_name]
     if page_name == 'Tools':
         page = pages[page_name]
