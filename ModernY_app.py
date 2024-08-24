@@ -19,7 +19,9 @@ def page():
     page_name = st.sidebar.radio('Navigation', list(pages.keys()))
     page_file = None
 
-    if page_name == 'ModernY' or 'PyGWalker':
+    if page_name == 'ModernY':
+        page_file = pages[page_name]
+    if page_name == 'PyGWalker':
         page_file = pages[page_name]
     if page_name == 'Tools':
         page = pages[page_name]
