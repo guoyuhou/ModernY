@@ -1,5 +1,6 @@
 import streamlit as st
 import time
+import os
 st.title(':blue[ModernY] :sunglasses:')
 def stream_data(text):
     for word in text.split(' '):
