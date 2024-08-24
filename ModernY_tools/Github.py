@@ -24,7 +24,6 @@ def get_relative_path(file_path, base_path='.'):
     return relative_path  
   
 # 示例  
-file_path = 'D:\Project\ModernY\ModernY_tools\Github.py'  
 relative_path = get_relative_path(file_path)  
 print(relative_path, '=============================')
 
