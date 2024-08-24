@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
-from pygwalker.api.streamlit import StreamlitRender
+from pygwalker.api.streamlit import StreamlitRenderer
 import os
-
+print('===========================================================')
 st.set_page_config(
     page_title = 'PyGWalker',
     layout='wide'
