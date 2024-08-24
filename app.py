@@ -11,7 +11,8 @@ def page():
             'PyQt5': 'PyQt5.py',
             'Strom Genie': 'Storm_genie.py',
             'Markdown': 'Markdown.py',
-            'Smalltools': 'ModernY_tools'
+            'Smalltools': 'ModernY_tools'   
+        }
     }
     page_name = st.sidebar.radio('Navigation', list(pages.keys()))
     page_file = None
