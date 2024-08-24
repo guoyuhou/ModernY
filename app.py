@@ -6,12 +6,12 @@ def page():
     pages = {
         'ModernY': 'ModernY_page.py',
         'Tools': {
-            'Github' : 'Github.py',
-            'Command': 'Command.py',
-            'PyQt5': 'PyQt5.py',
-            'Strom Genie': 'Storm_genie.py',
-            'Markdown': 'Markdown.py',
-            'Smalltools': 'ModernY_tools'   
+            'Github' : 'ModernY_tools\Github.py',
+            'Command': 'ModernY_tools\Command.py',
+            'PyQt5': 'ModernY_tools\PyQt5.py',
+            'Strom Genie': 'ModernY_tools\Storm_genie.py',
+            'Markdown': 'ModernY_tools\Markdown.py',
+            'Smalltools': 'ModernY_tools\smalltools'   
         }
     }
     page_name = st.sidebar.radio('Navigation', list(pages.keys()))
