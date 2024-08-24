@@ -11,7 +11,7 @@ def page():
             'PyQt5': 'ModernY_tools/PyQt5.py',
             'Strom Genie': 'ModernY_tools/Storm_genie.py',
             'Markdown': 'ModernY_tools/Markdown.py',
-            'Smalltools': 'ModernY_tools/smalltools'   
+            'smalltools': 'ModernY_tools\smalltools.py'   
         }
     }
     page_name = st.sidebar.radio('Navigation', list(pages.keys()))
