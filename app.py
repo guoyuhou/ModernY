@@ -6,7 +6,7 @@ def page():
     pages = {
         'ModernY': 'ModernY_page.py',
         'Tools': {
-            'Github' : 'ModernY/ModernY_tools/Github.py',
+            'Github' : 'ModernY_tools/Github.py',
             'Command': 'ModernY/ModernY_tools/Command.py',
             'PyQt5': 'ModernY/ModernY_tools/PyQt5.py',
             'Strom Genie': 'ModernY/ModernY_tools/Storm_genie.py',
