@@ -7,11 +7,11 @@ def page():
         'ModernY': 'ModernY_page.py',
         'Tools': {
             'Github' : 'ModernY_tools/Github.py',
-            'Command': 'ModernY/ModernY_tools/Command.py',
-            'PyQt5': 'ModernY/ModernY_tools/PyQt5.py',
-            'Strom Genie': 'ModernY/ModernY_tools/Storm_genie.py',
-            'Markdown': 'ModernY/ModernY_tools/Markdown.py',
-            'Smalltools': 'ModernY/ModernY_tools/smalltools'   
+            'Command': 'ModernY_tools/Command.py',
+            'PyQt5': 'ModernY_tools/PyQt5.py',
+            'Strom Genie': 'ModernY_tools/Storm_genie.py',
+            'Markdown': 'ModernY_tools/Markdown.py',
+            'Smalltools': 'ModernY_tools/smalltools'   
         }
     }
     page_name = st.sidebar.radio('Navigation', list(pages.keys()))
