@@ -6,6 +6,7 @@ print('=========================================================================
 def page():
     pages = {
         'ModernY': 'ModernY_page.py',
+        'PyGWalker' : 'PyGWalker.py',
         'Tools': {
             'Github' : 'ModernY_tools\Github.py',
             'Command': 'ModernY_tools\Command.py',
@@ -13,8 +14,7 @@ def page():
             'Strom Genie': 'ModernY_tools\Storm_genie.py',
             'Markdown': 'ModernY_tools\Markdown.py',
             'Smalltools': 'ModernY_tools\smalltools.py'
-        },
-        'PyGWalker' : 'PyGWalker.py'
+        }
     }
     page_name = st.sidebar.radio('Navigation', list(pages.keys()))
     page_file = None
