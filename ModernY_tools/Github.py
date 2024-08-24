@@ -1,6 +1,4 @@
 import streamlit as st
-st.title('GitHub')
-
 import os  
   
 def get_relative_path(file_path, base_path='.'):  
