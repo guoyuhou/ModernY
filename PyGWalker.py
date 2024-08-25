@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-from pygwalker.api.streamlit import StreamlitRenderer
+from pygwalker.api.streamlit import z as StreamlitRenderer
+
 
 st.title('PyGWalker')
 
