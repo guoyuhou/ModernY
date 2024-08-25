@@ -1,6 +1,8 @@
 import streamlit as st
 import time
 import os
+os.chdir('D:\\Project\\ModernY')  
+
 print('===========================================================================')
 def page():
     pages = {
