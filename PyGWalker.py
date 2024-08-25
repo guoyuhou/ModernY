@@ -1,14 +1,9 @@
-st.set_page_config(
-    page_title = 'PyGWalker',
-    layout='wide'
-)   
-
 import streamlit as st
 import pandas as pd
 from pygwalker.api.streamlit import StreamlitRenderer
-import os
-print('===========================================================')
-    
+
+st.set_page_config(page_title="PyGWalker", layout="wide")
+
 st.title('PyGWalker')
 
 # 创建一个文件上传器，允许用户上传CSV文件  
@@ -24,7 +19,7 @@ if uploaded_file is not None:
     # 定义一个函数来获取渲染器，确保在文件上传后才调用  
     @st.cache_resource  
     def get_pyg_renderer(df):  
-        return StreamlitRender(df, spec='./gw_config.json', spec_io_mode='rw')  
+        return StreamlitRenderer(df, spec='./gw_config.json', spec_io_mode='rw')  
   
     renderer = get_pyg_renderer(data)  
     renderer.explorer()
