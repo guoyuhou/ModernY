@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
-from pygwalker.api.streamlit import StreamlitRenderer
+from pygwalker.api.streamlit import z as StreamlitRenderer
 
 st.title('PyGWalker')
 
-# 创建一个文件上传器，允许用户上传CSV文件  
+# 创建一个文件上传器，允许用户上传CSV文件   
 uploaded_file = st.file_uploader("选择你的CSV文件", type=["csv"])  
 
 if uploaded_file is not None:  
