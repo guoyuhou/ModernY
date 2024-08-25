@@ -1,33 +1,40 @@
 import streamlit as st
-import time
 import os
-print('===========================================================================')
+
 def page():
     pages = {
         'ModernY': 'ModernY_page.py',
-        'PyGWalker' : 'PyGWalker.py',
+        'PyGWalker': 'PyGWalker.py',
         'Tools': {
-            'Github' : 'ModernY_tools\Github.py',
-            'Command': 'ModernY_tools\Command.py',
-            'PyQt5': 'ModernY_tools\PyQt5.py',
-            'Strom Genie': 'ModernY_tools\Storm_genie.py',
-            'Markdown': 'ModernY_tools\Markdown.py',
-            'Smalltools': 'ModernY_tools\smalltools.py'
+            'Github': os.path.join('ModernY_tools', 'Github.py'),
+            'Command': os.path.join('ModernY_tools', 'Command.py'),
+            'PyQt5': os.path.join('ModernY_tools', 'PyQt5.py'),
+            'Strom Genie': os.path.join('ModernY_tools', 'Storm_genie.py'),
+            'Markdown': os.path.join('ModernY_tools', 'Markdown.py'),
+            'Smalltools': os.path.join('ModernY_tools', 'smalltools.py')
         }
     }
+
     page_name = st.sidebar.radio('Navigation', list(pages.keys()))
     page_file = None
 
     if page_name == 'ModernY':
         page_file = pages[page_name]
-    if page_name == 'PyGWalker':
+    elif page_name == 'PyGWalker':
         page_file = pages[page_name]
-    if page_name == 'Tools':
-        page = pages[page_name]
-        page_title = st.sidebar.radio('Classification', list(page.keys()))
-        page_file = page[page_title]
+    elif page_name == 'Tools':
+        tool = pages[page_name]
+        page_title = st.sidebar.radio('Classification', list(tool.keys()))
+        page_file = tool[page_title]
+    
     if page_file:
-        exec(open(page_file, encoding='utf-8').read())
+        try:
+            with open(page_file, encoding='utf-8') as file:
+                exec(file.read())
+        except FileNotFoundError:
+            st.write(f'文件 {page_file} 找不到')
+        except Exception as e:
+            st.write(f'执行文件时出错: {e}')
     else:
         st.write('所选页面不正确')
 
