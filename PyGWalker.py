@@ -8,7 +8,7 @@ import pandas as pd
 from pygwalker.api.streamlit import StreamlitRenderer
 import os
 print('===========================================================')
-
+    
 st.title('PyGWalker')
 
 # 创建一个文件上传器，允许用户上传CSV文件  
