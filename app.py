@@ -6,7 +6,7 @@ def page():
         'ModernY': 'ModernY_page.py',
         'PyGWalker': 'PyGWalker.py',
         'Blogs': 'Blogs.py',
-        'Papers': 'Papers.py',
+        'Papers': 'papers.py',
         'Tools': {
             'Github': os.path.join('ModernY_tools', 'Github.py'),
             'Command': os.path.join('ModernY_tools', 'Command.py'),
