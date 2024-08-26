@@ -13,3 +13,5 @@ text = '''Welcome! This web is created by Alexander. It is used to store somethi
 
 if st.button('Click here!'):
     st.write_stream(stream_data(text))
+
+st.subheader('The package you use must import in app.py')
