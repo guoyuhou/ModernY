@@ -12,7 +12,7 @@ def read_markdown_file(file_path):
     return markdown.markdown(markdown_content)  
   
 # 设定包含Markdown文件和PDF文件的文件夹路径  
-papers_folder = "paperfiles.py"  # 假设你的Markdown文件和PDF文件都存放在这个文件夹中  
+papers_folder = "paperfiles"  # 假设你的Markdown文件和PDF文件都存放在这个文件夹中  
   
 # 获取文件夹中所有Markdown文件的名称  
 paper_notes = [f for f in os.listdir(papers_folder) if f.endswith(".md")]  
