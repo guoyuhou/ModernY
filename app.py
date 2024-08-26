@@ -12,7 +12,6 @@ def page():
             'Command': os.path.join('ModernY_tools', 'Command.py'),
             'PyQt5': os.path.join('ModernY_tools', 'PyQt5.py'),
             'Strom Genie': os.path.join('ModernY_tools', 'Storm_genie.py'),
-            'Markdown': os.path.join('ModernY_tools', 'Markdown.py'),
             'Smalltools': os.path.join('ModernY_tools', 'smalltools.py')
         }
     }
