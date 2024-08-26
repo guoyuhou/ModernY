@@ -1,7 +1,7 @@
 import streamlit as st
 import markdown
 import os
-
+import pygwalker
 def page():
     pages = {
         'ModernY': 'ModernY_page.py',
