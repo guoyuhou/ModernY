@@ -6,6 +6,7 @@ def page():
         'ModernY': 'ModernY_page.py',
         'PyGWalker': 'PyGWalker.py',
         'Blogs': 'Blogs.py',
+        'Papers': 'Papers.py',
         'Tools': {
             'Github': os.path.join('ModernY_tools', 'Github.py'),
             'Command': os.path.join('ModernY_tools', 'Command.py'),
@@ -24,6 +25,8 @@ def page():
     elif page_name == 'PyGWalker':
         page_file = pages[page_name]
     elif page_name == 'Blogs':
+        page_file = pages[page_name]
+    elif page_name == 'Papers':
         page_file = pages[page_name]
     elif page_name == 'Tools':
         tool = pages[page_name]
