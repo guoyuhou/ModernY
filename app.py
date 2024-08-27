@@ -3,12 +3,14 @@ import markdown
 import os
 import pygwalker
 from pygwalker.api.streamlit import StreamlitRenderer
+import time
 def page():
     pages = {
         'ModernY': 'ModernY_page.py',
         'PyGWalker': 'PyGWalker.py',
         'Blogs': 'Blogs.py',
         'Papers': 'Papers.py',
+        'Project': 'Project.py',
         'Tools': {
             'Github': os.path.join('ModernY_tools', 'Github.py'),
             'Command': os.path.join('ModernY_tools', 'Command.py'),
