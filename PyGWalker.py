@@ -5,7 +5,7 @@ import os
 
 st.title('PyGWalker')
 
-st.video('videos\pygwalker.mp4')
+st.video(os.path.join('videos', 'pygwalker.mp4'))
 
 # 创建一个文件上传器，允许用户上传CSV文件   
 uploaded_file = st.file_uploader("选择你的CSV文件", type=["csv"])  
