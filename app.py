@@ -31,6 +31,8 @@ def page():
         page_file = pages[page_name]
     elif page_name == 'Papers':
         page_file = pages[page_name]
+    elif page_name == 'Project':
+        page_file = pages[page_name]
     elif page_name == 'Tools':
         tool = pages[page_name]
         page_title = st.sidebar.radio('Classification', list(tool.keys()))
