@@ -1,10 +1,6 @@
 import streamlit as st
 import os
-
-
-
-st.title('Strom Genie')
-st.subheader('Storm genie')
+st.title('Storm Genie')
 st.caption('by stanford')
 st.write(f'__Address__: _https://storm.genie.stanford.edu/_')
 st.write(f'__Introduce__:This model could help us to generate a article that include main chapter and some '
