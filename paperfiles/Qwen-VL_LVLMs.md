@@ -1,4 +1,4 @@
-# Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond
+# Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond (2024.8.27)
 by Alibaba Group
 
 "What's more, as real-world visula scenarios are quite complicated fine-grained visual understanding plays a crucial role for LVLMs to assist people effectively and precisely.But only a few attempts had been made toward this direction, the majority of open-source LVLMs remain perceiving the image in a coarse-grained approach and lacking the ability to execute fine-grained perception such as object grouding or text reading"
