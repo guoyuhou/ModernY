@@ -1,4 +1,4 @@
-# NatureDeepReview
+# NatureDeepReview(2024.8.28)
 This paper was esablished in 2015. This article provides review of former reseach in Deep learning.
 
 Deep learning experience slow development before 2015. Then a revolutionary technology in deep learning emerged: Convolutional neural network(CNN). Subsequently, image processing experience rapid development.
