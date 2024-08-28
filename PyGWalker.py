@@ -4,7 +4,7 @@ from pygwalker.api.streamlit import StreamlitRenderer
 import os
 
 st.title('PyGWalker')
-
+st.write('__PyGWalker is a powerful data processing and drawing tool__')
 st.video(os.path.join('videos', 'pygwalker.mp4'))
 
 # 创建一个文件上传器，允许用户上传CSV文件   

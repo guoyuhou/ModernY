@@ -1,4 +1,4 @@
-# The Llama 3 herd of Models
+# The Llama 3 herd of Models(2024.8.28)
 
 ## This article is an industry report. This report discusses the latest update of Meta's LLMs Llama.
 
