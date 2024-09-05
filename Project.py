@@ -35,3 +35,5 @@ def download_block():
                 file_name=selected_file,  
                 mime='application/octet-stream'  # 适用于任意二进制文件，可以根据文件类型调整  
             )
+
+    download_block()
