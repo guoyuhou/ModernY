@@ -8,12 +8,13 @@ def load_markdown_file(file_name):
         return file.read()  
   
 # 将 MD 文件内容显示在 Streamlit 网页上  
-md_content = load_markdown_file("CD_.md")  
+file_path = os.path.join('Project, 实验设计.md')
+md_content = load_markdown_file(file_path)  
 st.markdown(md_content)  
   
-st.subheader('文件下载：')
 
 def download_block():
+    st.subheader('文件下载：')
     # 获取Project文件夹路径  
     project_folder = os.path.join(os.path.dirname(__file__), 'Project')  
     
