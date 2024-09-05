@@ -30,7 +30,7 @@
 大肠杆菌抑菌圈：5.200±0.529 cm  
 金黄色葡萄球菌抑菌圈：7.300±0.318 cm   
 大肠杆菌MIC: 1.95 g/L  大肠杆菌MBC：15.53 g/L  
-金黄色葡萄球菌MIC: 3.91 g/L 金黄色葡萄球菌MBC: 125 g/L  
+金黄色葡萄球菌MIC: 3.91 g/L 金黄色葡萄球菌MBC: 125 g/L      
 
 
 [1]Liu, J.-L., Lin, L.-Z., Hu, J.-F., Bai, M.-J., Chen, L.-X., Wei, J.-J., Hei, L.-F., & Li, C.-M. (2018). Reaction Process and Luminescence Mechanism of Carbon Nanodots Prepared by Microwave Synthesis. 物理化学学报 (Acta Physico-Chimica Sinica), 34(1), 92-98. doi: 10.3866/PKU.WHXB201706221.
