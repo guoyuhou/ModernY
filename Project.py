@@ -8,8 +8,7 @@ def load_markdown_file(file_name):
         return file.read()  
   
 # 将 MD 文件内容显示在 Streamlit 网页上  
-file_path = os.path.join('Project, 实验设计.md')
-md_content = load_markdown_file(file_path)  
+md_content = load_markdown_file("CD_.md")  
 st.markdown(md_content)  
   
 
