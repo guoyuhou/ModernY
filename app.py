@@ -4,30 +4,6 @@ import os
 import pygwalker
 from pygwalker.api.streamlit import StreamlitRenderer
 import time
-import oss2
-# 从 Streamlit 配置中读取密钥
-secrets = st.secrets["oss"]
-access_key_id = secrets["access_key_id"]
-access_key_secret = secrets["access_key_secret"]
-endpoint = secrets["endpoint"]
-bucket_name = secrets["bucket_name"]
-
-# 初始化 OSS 客户端
-auth = oss2.Auth(access_key_id, access_key_secret)
-bucket = oss2.Bucket(auth, endpoint, bucket_name)
-
-def list_files():
-    files = [obj.key for obj in oss2.ObjectIterator(bucket)]
-    return files
-
-def upload_file(file):
-    bucket.put_object(file.name, file.read())
-
-def download_file(file_key):
-    return bucket.get_object(file_key).read()
-
-def delete_file(file_key):
-    bucket.delete_object(file_key)
 
 def page():
     pages = {
@@ -79,46 +55,6 @@ def page():
     page_name = st.sidebar.radio('Navigation', list(pages.keys()))
     page_file = pages.get(page_name)
 
-    if page_file:
-        try:
-            if page_name == 'File Manager':
-                st.title('File Manager')
+    page()
 
-                # 文件上传
-                uploaded_file = st.file_uploader("上传文件", type=['txt', 'csv', 'jpg', 'png'])
-                if uploaded_file:
-                    upload_file(uploaded_file)
-                    st.success("文件上传成功")
-
-                # 文件展示
-                if st.button('显示所有文件'):
-                    files = list_files()
-                    st.write("云存储中的文件:")
-                    for file in files:
-                        st.write(file)
-                        if st.button(f'下载 {file}'):
-                            file_content = download_file(file)
-                            st.download_button(label=f"下载 {file}", data=file_content, file_name=file)
-
-                # 文件删除
-                file_to_delete = st.text_input("输入要删除的文件名")
-                if st.button("删除文件"):
-                    if file_to_delete:
-                        delete_file(file_to_delete)
-                        st.success(f"文件 {file_to_delete} 已删除")
-                    else:
-                        st.error("请提供要删除的文件名")
-                    
-            else:
-                with open(page_file, encoding='utf-8') as file:
-                    exec(file.read())
-        except FileNotFoundError:
-            st.write(f'文件 {page_file} 找不到')
-        except Exception as e:
-            st.write(f'执行文件时出错: {e}')
-    else:
-        st.write('所选页面不正确')
-
-page()
-
-
+    
