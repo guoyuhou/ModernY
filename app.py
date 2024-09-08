@@ -94,7 +94,7 @@ def page():
         page_title = st.sidebar.radio('Classification', list(tool.keys()))
         page_file = tool[page_title]
     elif page_name == 'Cloud Storage':
-        st.sidebar.write('云存储管理')
+        page_file = pages[page_name]
         display_files()
         upload_file()
         download_file()
