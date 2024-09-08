@@ -5,12 +5,13 @@ import pygwalker
 from pygwalker.api.streamlit import StreamlitRenderer
 import time
 import oss2
-# OSS 配置
-access_key_id = os.getenv('OSS_ACCESS_KEY_ID')
-access_key_secret = os.getenv('OSS_ACCESS_KEY_SECRET')
-endpoint = os.getenv('OSS_ENDPOINT')  # 你的 OSS 端点
-bucket_name = os.getenv('OSS_BUCKET_NAME')  # 你的桶名称
- 
+# 从 Streamlit 配置中读取密钥
+secrets = st.secrets["oss"]
+access_key_id = secrets["access_key_id"]
+access_key_secret = secrets["access_key_secret"]
+endpoint = secrets["endpoint"]
+bucket_name = secrets["bucket_name"]
+
 # 初始化 OSS 客户端
 auth = oss2.Auth(access_key_id, access_key_secret)
 bucket = oss2.Bucket(auth, endpoint, bucket_name)
