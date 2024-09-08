@@ -5,6 +5,7 @@ import pygwalker
 from pygwalker.api.streamlit import StreamlitRenderer
 import time
 import oss2
+import config
 '''
 def page():
     pages = {
@@ -55,10 +56,10 @@ def page():
 page()
 '''
 # OSS 配置
-ACCESS_KEY_ID = 'LTAI5tPBPKDnjmHrJtGwL4Pc'
-ACCESS_KEY_SECRET = 'mjzVXrNksuSmXb8v5zX86kLo2izzgZ'
-ENDPOINT = 'oss-cn-qingdao.aliyuncs.com'  
-BUCKET_NAME = 'diary-alexander'  
+ACCESS_KEY_ID = config.OSS_ACCESS_KEY_ID
+ACCESS_KEY_SECRET = config.OSS_ACCESS_KEY_SECRET
+ENDPOINT = config.OSS_ENDPOINT
+BUCKET_NAME = config.OSS_BUCKET_NAME
 
 # 初始化 OSS 客户端
 auth = oss2.Auth(ACCESS_KEY_ID, ACCESS_KEY_SECRET)
