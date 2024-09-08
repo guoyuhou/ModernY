@@ -5,6 +5,7 @@ import pygwalker
 from pygwalker.api.streamlit import StreamlitRenderer
 import time
 
+
 def page():
     pages = {
         'ModernY': 'ModernY_page.py',
@@ -51,8 +52,4 @@ def page():
     else:
         st.write('所选页面不正确')
 
-
-    page_name = st.sidebar.radio('Navigation', list(pages.keys()))
-    page_file = pages.get(page_name)
-
-    
+page()
