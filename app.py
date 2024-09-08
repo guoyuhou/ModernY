@@ -10,7 +10,7 @@ ACCESS_KEY_ID = os.getenv('OSS_ACCESS_KEY_ID')
 ACCESS_KEY_SECRET = os.getenv('OSS_ACCESS_KEY_SECRET')
 ENDPOINT = os.getenv('OSS_ENDPOINT')
 BUCKET_NAME = os.getenv('OSS_BUCKET_NAME')
- 
+
 # 初始化 OSS 客户端
 auth = oss2.Auth(ACCESS_KEY_ID, ACCESS_KEY_SECRET)
 bucket = oss2.Bucket(auth, ENDPOINT, BUCKET_NAME)
