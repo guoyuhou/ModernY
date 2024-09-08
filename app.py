@@ -10,8 +10,9 @@ from io import BytesIO
 # 从Streamlit的Secrets中读取OSS的密钥和存储桶信息
 ACCESS_KEY_ID = st.secrets["oss"]["ACCESS_KEY_ID"]
 ACCESS_KEY_SECRET = st.secrets["oss"]["ACCESS_KEY_SECRET"]
-BUCKET_NAME = st.secrets["oss"]["BUCKET_NAME"]
 ENDPOINT = st.secrets["oss"]["ENDPOINT"]
+BUCKET_NAME = st.secrets["oss"]["BUCKET_NAME"]
+
 
 # 创建OSS认证和存储桶对象
 auth = oss2.Auth(ACCESS_KEY_ID, ACCESS_KEY_SECRET)
