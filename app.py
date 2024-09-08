@@ -6,14 +6,14 @@ from pygwalker.api.streamlit import StreamlitRenderer
 import time
 import oss2
 # OSS 配置
-ACCESS_KEY_ID = os.getenv('OSS_ACCESS_KEY_ID')
-ACCESS_KEY_SECRET = os.getenv('OSS_ACCESS_KEY_SECRET')
-ENDPOINT = os.getenv('OSS_ENDPOINT')
-BUCKET_NAME = os.getenv('OSS_BUCKET_NAME')
+access_key_id = os.getenv('OSS_ACCESS_KEY_ID')
+access_key_secret = os.getenv('OSS_ACCESS_KEY_SECRET')
+endpoint = os.getenv('OSS_ENDPOINT')  # 你的 OSS 端点
+bucket_name = os.getenv('OSS_BUCKET_NAME')  # 你的桶名称
  
 # 初始化 OSS 客户端
-auth = oss2.Auth(ACCESS_KEY_ID, ACCESS_KEY_SECRET)
-bucket = oss2.Bucket(auth, ENDPOINT, BUCKET_NAME)
+auth = oss2.Auth(access_key_id, access_key_secret)
+bucket = oss2.Bucket(auth, endpoint, bucket_name)
 
 def list_files():
     files = [obj.key for obj in oss2.ObjectIterator(bucket)]
