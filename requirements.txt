@@ -1,3 +1,5 @@
+aliyun-python-sdk-core==2.15.2
+aliyun-python-sdk-kms==2.16.5
 altair==5.4.0
 annotated-types==0.7.0
 appdirs==1.4.4
@@ -9,15 +11,19 @@ backoff==2.2.1
 blinker==1.8.2
 cachetools==5.5.0
 certifi==2024.7.4
+cffi==1.17.1
 charset-normalizer==3.3.2
 click==8.1.7
 colorama==0.4.6
 comm==0.2.2
+crcmod==1.7
+cryptography==43.0.1
 dateutils==0.6.12
 decorator==5.1.1
 duckdb==1.0.0
 exceptiongroup==1.2.2
 executing==2.0.1
+git-filter-repo==2.45.0
 gitdb==4.0.11
 GitPython==3.1.43
 greenlet==3.0.3
@@ -30,6 +36,7 @@ ipython==8.18.1
 ipywidgets==8.1.5
 jedi==0.19.1
 Jinja2==3.1.4
+jmespath==0.10.0
 jsonschema==4.23.0
 jsonschema-specifications==2023.12.1
 jupyterlab_widgets==3.0.13
@@ -42,6 +49,7 @@ mdurl==0.1.2
 monotonic==1.6
 narwhals==1.5.4
 numpy==1.26.4
+oss2==2.19.0
 packaging==24.1
 pandas==2.2.2
 parso==0.8.4
@@ -51,6 +59,8 @@ protobuf==5.27.3
 psutil==6.0.0
 pure_eval==0.2.3
 pyarrow==17.0.0
+pycparser==2.22
+pycryptodome==3.20.0
 pydantic==2.8.2
 pydantic_core==2.20.1
 pydeck==0.9.1
